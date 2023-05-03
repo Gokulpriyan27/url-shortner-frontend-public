@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Newsreader:ital,wght@0,400;1,300&family=Noto+Serif+Khojki&family=Playfair+Display&family=Poppins:wght@200;300;400&family=Roboto+Slab:wght@200;300;400&family=Roboto:wght@300;400;700&display=swap");
+
+.dash-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 16vh);
+  background-color: #151a1e;
+  color: white;
+  font-family: "Poppins", sans-serif;
+
+  .dash-container {
+    padding-top: 10vh;
+    margin: 0 auto;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    .clear-btn{
+      width: 20vh;
+      margin:0 auto;
+    }
+
+    .data-wrapper{
+      display: flex;
+      justify-content: center;
+      // border: 1px solid white;     
+      
+      .no-url-found{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+      }
+
+      .hightlight{
+        color: #5cebdf;
+        margin-left: 1vh;
+        font-size: 30px;
+        cursor: pointer;
+      }
+       
+     }
+
+    .picker-wrapper {
+      display: flex;
+      width: 95%;
+      margin: 0 auto;
+        gap:5vh;
+        align-items: center;
+
+        h4{
+          color:#5cebdf;
+          font-weight: 500;
+        }
+
+       
+        
+
+      .date-picker-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+        h5 {
+          width: 40%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          margin: 0 auto;
+        }
+
+        .custom-datepicker {
+          display: flex;
+          background-color: #151a1e;
+          border: 2px solid #80858a;
+          border-radius: 5px;
+          margin: 0 auto;
+          color: white;
+          width: 80%;
+          text-align: center;
+          letter-spacing: 2px;
+          height: 45px;
+          font-size: larger;
+          &:hover{
+            border: 2px solid #5cebdf;
+          }
+        }
+
+        .fetch-btn {
+            width: 30%;
+            height: 7vh;
+            &:hover{
+                transform: scale(0.95);
+                transition: 0.1s ease;
+            }
+        }
+      }
+
+      .month-picker-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+        h5 {
+          width: 40%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          margin: 0 auto;
+        }
+
+        .custom-datepicker {
+          display: flex;
+          background-color: #151a1e;
+          border: 2px solid #80858a;
+          border-radius: 5px;
+          margin: 0 auto;
+          color: white;
+          width: 80%;
+          text-align: center;
+          letter-spacing: 2px;
+          height: 45px;
+          font-size: larger;
+
+          &:hover{
+            border: 2px solid #5cebdf;
+          }
+        }
+
+        .fetch-btn {
+            width: 30%;
+            height: 7vh;
+            &:hover{
+                transform: scale(0.95);
+                transition: 0.1s ease;
+            }
+        }
+      }
+
+      
+    }
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  body {
+    display: none;
+  }
+}

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Newsreader:ital,wght@0,400;1,300&family=Noto+Serif+Khojki&family=Playfair+Display&family=Poppins:wght@300;400&family=Roboto+Slab:wght@200;300;400&family=Roboto:wght@300;400;700&display=swap');
+
+.register-wrapper{
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #070b0d;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.register-container{
+    max-width: 25% !important;
+    height: calc( 100vh - 30vh );
+    position: absolute;
+    justify-content: center;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register-form{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+#email,#firstname,#lastname,#password{
+    background-color:  #151a1e;
+    border-color: #80858a;
+    color: white;
+}
+
+.link-tag{
+    color: #5cebdf;
+}
+
+.link-tag:hover{
+    color: #9ef9e0;
+}
+
+#username:hover,#email:hover,#password:hover{
+    background-color:  #151a1e;
+    border-color: #5cebdf;
+}
+
+.register-button{
+    width: 100%;
+    font-size: 18px !important;
+    color: #2a2e32 !important;
+    background-color: #5cebdf !important;
+    border: 1px solid #5cebdf !important;
+}
+
+.register-button:hover{
+    background-color: #9ef9e0 !important;
+    border: 1px solid #9ef9e0 !important;
+    transition: 0.1s ease-in;
+    transform: scale(0.97);
+}
+
+.other-signin{
+   
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.signin{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.google-button{
+    font-size: 18px !important;
+    width: 20vh;
+    color: white !important;
+    background-color: #DB4437 !important;
+    border: 1px solid #DB4437 !important;
+}
+
+.google-button:hover{
+    background-color:#f03423 !important;
+    border: 1px solid #464343 !important;
+    transition: 0.15s ease-in-out;
+    transform: scale(0.97);
+}
+
+.github-button{
+    width: 20vh;
+    font-size: 18px !important;
+    color: #2a2e32 !important;
+    background-color: #464343 !important;
+    border: 1px solid #464343 !important;
+    color: white !important;
+}
+
+.github-button:hover{
+    
+    background-color: #272525 !important;
+    border: 1px solid #464343 !important;
+    transition: 0.15s ease-in-out;
+    transform: scale(0.97);
+}
+
+.loginitems{
+    display: flex;
+    gap: 10px;
+}
+
+.signin:hover{
+    color: #DB4437;
+    transform: scale(0.96);
+}
+
+@media only screen and (max-width: 600px) {
+    .register-container{
+        max-width: 90% !important;
+        min-height: 20vh !important;
+        font-size: 15px;
+    }
+    #email,#firstname,#lastname,#password{
+        height: 50px;
+    }
+
+    .register-button{
+        font-size: 15px !important;
+    }
+  }
+
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .register-container{
+        max-width: 60% !important;
+        min-height: 20vh !important;
+        font-size: 15px;
+    }
+   }
+
+   @media (max-width: 1024px) and (orientation:landscape) {
+   
+    .register-container{
+        max-width: 50% !important;
+        min-height: calc(100vh - 5vh ) !important;
+        font-size: 15px;
+        top:30px;
+    }
+    #email,#firstname,#lastname,#password{
+        height: 45px;
+    }
+
+    .register-button{
+        font-size: 15px !important;
+    }
+  }

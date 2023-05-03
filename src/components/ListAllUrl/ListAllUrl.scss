@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Newsreader:ital,wght@0,400;1,300&family=Noto+Serif+Khojki&family=Playfair+Display&family=Poppins:wght@200;300;400&family=Roboto+Slab:wght@200;300;400&family=Roboto:wght@300;400;700&display=swap");
+
+.list-wrapper {
+  min-height: calc(100vh - 16vh);
+  font-family: "Poppins", sans-serif;
+  background-color: #151a1e;
+
+  .list-container {
+    height: auto;
+    width: 90%;
+
+    .no-content-wrapper{
+      display: flex;
+      justify-content: center;
+      height: 20vh;
+      align-items: center;
+      color: rgb(132, 128, 128);
+    }
+
+    .list-table {
+      margin: 5vh auto 5vh;
+      text-align: center;
+
+      .links {
+        text-decoration: none;
+        color: #ffc107;
+      }
+      .originalurl {
+        max-width: 25vh;
+        overflow: auto;
+      }
+      .originalurl::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+      }
+
+      .originalurl::-webkit-scrollbar-track {
+        background-color: 2a2e32;
+      }
+
+      .originalurl::-webkit-scrollbar-thumb {
+        background-color: #2a2e32;
+        border-radius: 5px;
+        border: 1px solid #9ef9e0;
+        background-color: #9ef9e0;
+      }
+
+      .shorturl {
+        max-width: 20vh;
+        overflow: auto;
+      }
+
+      .shorturl::-webkit-scrollbar {
+        width: 5px;
+        height: 8px;
+      }
+
+      .shorturl::-webkit-scrollbar-track {
+        background-color: 2a2e32;
+      }
+
+      .shorturl::-webkit-scrollbar-thumb {
+        background-color: #2a2e32;
+        border-radius: 5px;
+        border: 1px solid #9ef9e0;
+        background-color: #9ef9e0;
+      }
+    }
+  }
+}
+
+

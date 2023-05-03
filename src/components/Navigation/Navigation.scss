@@ -1,0 +1,24 @@
+
+
+.navbar-wrapper{
+    font-family: "Poppins", sans-serif;
+    height: 8vh;
+    display: flex !important;
+    justify-content: center !important;
+
+    .nav-wrapper{
+        width: 60%;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .links{
+            text-decoration: none;
+
+            &:hover{
+               color: #5cebdf;
+            }
+        }
+    }
+}
+
